@@ -4,5 +4,5 @@ export const navLinks: NavBarItem[] = [
     // {title: 'Experience', href: '/work-experience'},
     {title: 'Projects', href: '/projects'},
     {title: 'Skills', href: '/skills'},
-    {title: 'Contacts', href: '/contacts'},
+    {title: 'Educations', href: '/educations'},
 ]

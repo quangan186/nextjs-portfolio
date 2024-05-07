@@ -1,3 +1,7 @@
 export * from './navbar'
 export * from './contact'
 export * from './navbar'
+export * from './project'
+export * from './skill'
+export * from './education'
+export * from './certificate'
