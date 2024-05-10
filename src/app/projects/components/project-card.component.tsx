@@ -1,4 +1,4 @@
-import { Text, Title } from "@/components";
+import { ContainerWrapper, Text, Title, Wrapper } from "@/components";
 import { ProjectModel } from "@/core";
 import React from "react";
 
@@ -8,26 +8,25 @@ interface Props {
 
 export const ProjectCard = (props: Props) => {
   return (
-    <div>
-      <Title>{props.item.title}</Title>
-      <Text>{props.item.role}</Text>
-      <div>
-        <Title>Description</Title>
-        <ul>
+    <ContainerWrapper>
+      <Title>{props.item.title} - {props.item.role}</Title>
+      <Wrapper>
+        <Title className="text-lg">Description</Title>
+        <ul className="px-8 leading-10">
           {props.item.description.map((desc, index) => {
             return <li key={`${desc}-${index}`}>{desc}</li>;
           })}
         </ul>
-      </div>
+      </Wrapper>
 
-      <div>
-        <Title>Description</Title>
-        <ul>
+      <Wrapper>
+        <Title className="text-lg">Technologies used:</Title>
+        <ul className="px-8 leading-10">
           {props.item.techStacks.map((tech, index) => {
             return <li key={`${tech}-${index}`}>{tech}</li>;
           })}
         </ul>
-      </div>
-    </div>
+      </Wrapper>
+    </ContainerWrapper>
   );
 };

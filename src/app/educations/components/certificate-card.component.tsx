@@ -1,5 +1,6 @@
-import { Text, Title } from "@/components";
+import { Text, Title, Wrapper } from "@/components";
 import { CertificateModel } from "@/core";
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -8,8 +9,8 @@ interface Props {
 
 export const CertificateCard = (props: Props) => {
   return (
-    <div>
-      <a
+    <Wrapper className="!w-1/2">
+      <Link
         href={props.item.link}
         target="_blank"
         rel="noreferrer"
@@ -18,8 +19,8 @@ export const CertificateCard = (props: Props) => {
         <Title className="!text-[20px] !font-normal">
           {props.item.title} | {props.item.from}
         </Title>
-      </a>
-      <Text className="!text-[16px] italic">{props.item.time}</Text>
-    </div>
+      </Link>
+      <Text className="!text-[16px] italic mt-2">{props.item.time}</Text>
+    </Wrapper>
   );
 };

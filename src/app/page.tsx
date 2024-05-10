@@ -1,4 +1,4 @@
-import { Text, Title } from "@/components";
+import { ScreenWrapper, Text, Title, Wrapper } from "@/components";
 import { contactList, profileInfo } from "@/core";
 import Image from "next/image";
 import React from "react";
@@ -7,8 +7,9 @@ import { ContactList } from "./components";
 export default function Home() {
   return (
     <div className="max-h-screen h-[80vh]">
-      <div className="flex gap-8 h-full">
-        <div className="w-full flex flex-col items-center gap-6">
+      <Title className="px-6">Welcome to my portfolio</Title>
+      <ScreenWrapper className="flex gap-8 h-full mt-4">
+        <Wrapper className="w-full max-w-[400px] flex flex-col items-center gap-6 px-0">
           <Image
             src={"/my-img.JPG"}
             alt="my-img"
@@ -20,9 +21,9 @@ export default function Home() {
           <Title className="text-center text-lg !font-normal">
             Software developer - Frontend developer
           </Title>
-        </div>
+        </Wrapper>
 
-        <div className="w-full flex flex-col justify-between">
+        <Wrapper className="w-full flex flex-col justify-between px-0">
           {profileInfo.map((item) => {
             return (
               <Title
@@ -41,8 +42,8 @@ export default function Home() {
           </Text>
 
           <ContactList items={contactList} />
-        </div>
-      </div>
+        </Wrapper>
+      </ScreenWrapper>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { ProjectModel } from "../models";
 
 export const projectList: ProjectModel[] = [
   {
-    title: "eSchool Cambodia",
+    title: "SIS Cambodia",
     role: "Mobile developer",
     description: [
       "Developed an app and website for managing over 30,000 students and teachers in Cambodia.",
@@ -10,7 +10,7 @@ export const projectList: ProjectModel[] = [
       "Experience in using Redux Toolkit and Redux Toolkit Query to handle API",
       "Demonstrated adeptness in project coordination, fostering strong collaborations with team members, overseeing component management, structuring projects effectively, and adeptly handling data",
     ],
-    techStacks: ["React Native", "TypeScript", "Angular", ".Net", "SQL"],
+    techStacks: ["React Native", "TypeScript"],
   },
   {
     title: "Netcompany Social Suggestion",
@@ -21,7 +21,7 @@ export const projectList: ProjectModel[] = [
       "Architected and implemented robust state management using Redux Toolkit, enhancing app performance and user experience by streamlining state updates and minimizing re-renders",
       "Using Pusher service and Google Maps API to develop the “Real-time notifications” and “Get current location” features",
     ],
-    techStacks: ["MongoDB", "NestJs", "ReactJs", "NodeJs", "TailwindCSS"],
+    techStacks: ["ReactJS", "TailwindCSS", "Google Maps API"],
   },
   {
     title: "RMITinder",
@@ -31,7 +31,7 @@ export const projectList: ProjectModel[] = [
       "Utilizing grid systems for optimal visual organization and user experience for “Chatbox”, “Ideal match”, etc.",
       "Identified and resolved UI bugs in “Chat box” including “Load more message”, length of “Chat content card”, and unchanged position in chat after clicking the “Load more previous” button in chat.",
     ],
-    techStacks: ["MongoDB", "ReactJs", "NodeJs", "TailwindCSS"],
+    techStacks: ["ReactJS", "Tailwind CSS"],
   },
   {
     title: "VF Corporation",
@@ -39,7 +39,7 @@ export const projectList: ProjectModel[] = [
     description: [
       "This is my first project that I have done since I started to learn about developing websites and it is a game-selling website",
     ],
-    techStacks: ["HTML", "CSS", "Javascript"],
+    techStacks: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "My Dictionary",
@@ -57,6 +57,6 @@ export const projectList: ProjectModel[] = [
     description: [
       "The project is an Android app that is about selling products from the user side while being able to create, add, and delete store items from the admin side.",
     ],
-    techStacks: ["Java"],
+    techStacks: ["Java, Android Studio"],
   },
 ];

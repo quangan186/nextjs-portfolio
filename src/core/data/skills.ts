@@ -19,7 +19,7 @@ export const versionControlSkills: SkillModel[] = [
 ]
 
 export const otherSkills: SkillModel[] = [
-    { skill: "NextJs", level: 2},
+    { skill: "NextJS", level: 2},
     { skill: "SCSS / SASS", level: 4},
     { skill: "Figma", level: 3 },
     { skill: "AWS", level: 3 },
@@ -33,6 +33,17 @@ export const otherSkills: SkillModel[] = [
     { skill: "OOP", level: 2 }, 
     { skill: "MongoDB", level: 1 },
     { skill: "MySQL", level: 1 },
-    { skill: "NodeJs", level: 2 },
-    { skill: "ExpressJs", level: 2 },
+    { skill: "NodeJS", level: 2 },
+    { skill: "ExpressJS", level: 2 },
+]
+
+export const softSkills: SkillModel[] = [
+    { skill: "Teamwork and Communication", level: 3},
+    { skill: "Critical Thinking", level: 3},
+    { skill: "Talkative, friendly with everyone", level: 3},
+    { skill: "Willing to learn and improve myself everyday", level: 3},
+]
+
+export const foreignLanguageSkills: SkillModel[] = [
+    { skill: "Full professional proficiency in English, native in Vietnamese", level: 3},
 ]

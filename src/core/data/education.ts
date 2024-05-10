@@ -2,7 +2,7 @@ import { EducationModel } from "../models";
 
 export const educations: EducationModel[] = [
     {
-        degree: 'Bachelor of Information Technology',
+        degree: 'Bachelor of Information Technology with Distinction',
         school: 'RMIT University Vietnam',
         gpa: '3.3',
         startTime: 'March 2021',

@@ -1,5 +1,6 @@
 export class ProjectModel {
     title: string;
+    workAt?: string;
     role: string;
     description: string[];
     techStacks: string[]
